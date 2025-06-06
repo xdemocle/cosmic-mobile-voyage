@@ -64,10 +64,13 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					orange: 'rgb(196, 111, 0)',
-					dark: 'rgb(45, 47, 56)',
-					red: '#dc2626',
-					white: '#ffffff'
+					primary: '#FF6B35',     // Vibrant orange
+					secondary: '#2D2F38',   // Dark gray
+					accent: '#1A1C23',      // Darker accent
+					dark: 'rgb(45, 47, 56)', // Original dark
+					white: '#FFFFFF',
+					light: '#E5E7EB',       // Light gray for text
+					muted: '#6B7280'        // Muted gray
 				}
 			},
 			fontFamily: {
