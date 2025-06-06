@@ -4,7 +4,7 @@ import { ArrowRight, Rocket } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 via-red-900 to-black flex items-center justify-center px-4 relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-brand-dark via-black to-brand-dark flex items-center justify-center px-4 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 text-6xl animate-pulse">⭐</div>
@@ -20,26 +20,25 @@ export const Hero = () => {
             alt="The Web3 Ninja Logo" 
             className="w-20 h-20 md:w-24 md:h-24"
           />
-          <div className="text-6xl md:text-8xl">🚀</div>
         </div>
         
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-          The <span className="text-red-500">Web3</span> Ninja
+        <h1 className="text-4xl md:text-6xl font-bold text-brand-white mb-6 animate-fade-in font-josefin">
+          The <span className="text-brand-red">Web3</span> Ninja
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
+        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in delay-200 font-inter">
           Mastering the art of Web3 development. Stealthy smart contracts, 
           lightning-fast DApps, and blockchain solutions that cut through complexity.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-400">
-          <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg rounded-full transition-all duration-300 hover:scale-105">
-            <Rocket className="mr-2 h-5 w-5" />
+          <Button className="bg-brand-orange hover:bg-brand-orange/90 text-brand-white px-10 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 h-14">
+            <Rocket className="mr-2 h-6 w-6" />
             Start Mission
           </Button>
-          <Button variant="outline" className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-3 text-lg rounded-full transition-all duration-300">
+          <Button variant="outline" className="border-brand-red text-brand-red hover:bg-brand-red hover:text-brand-white px-10 py-4 text-lg rounded-full transition-all duration-300 h-14">
             Explore Skills
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <ArrowRight className="ml-2 h-6 w-6" />
           </Button>
         </div>
       </div>

@@ -62,7 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				brand: {
+					orange: 'rgb(196, 111, 0)',
+					dark: 'rgb(45, 47, 56)',
+					red: '#dc2626',
+					white: '#ffffff'
 				}
+			},
+			fontFamily: {
+				'josefin': ['Josefin Sans', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
