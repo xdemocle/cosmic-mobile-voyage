@@ -4,36 +4,36 @@ import { Button } from "@/components/ui/button";
 export const Services = () => {
   const services = [
     {
-      title: "Web Development",
-      description: "Full-stack development with modern frameworks and technologies",
-      price: "From $2,999",
-      features: ["React/Next.js", "Node.js Backend", "Database Design", "API Integration"],
-      emoji: "🌐"
+      title: "Smart Contract Development",
+      description: "Custom smart contracts built with security and efficiency in mind",
+      price: "From $5,000",
+      features: ["Solidity/Vyper", "Security Audits", "Gas Optimization", "Multi-chain Support"],
+      emoji: "⚔️"
     },
     {
-      title: "Mobile Apps",
-      description: "Native and cross-platform mobile applications",
-      price: "From $4,999",
-      features: ["iOS & Android", "React Native", "App Store Deploy", "Push Notifications"],
-      emoji: "📱"
+      title: "DApp Development",
+      description: "Full-stack decentralized applications with intuitive user experiences",
+      price: "From $8,000",
+      features: ["React/Next.js", "Web3 Integration", "Wallet Connect", "IPFS Storage"],
+      emoji: "🥷"
     },
     {
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and deployment",
-      price: "From $1,999",
-      features: ["AWS/Azure", "Auto-scaling", "CI/CD Pipeline", "Monitoring"],
-      emoji: "☁️"
+      title: "Blockchain Consulting",
+      description: "Strategic guidance for your Web3 journey and tokenomics design",
+      price: "From $2,000",
+      features: ["Architecture Design", "Token Economics", "Governance Models", "Technical Strategy"],
+      emoji: "🧠"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900">
+    <section className="py-20 bg-gradient-to-br from-black to-red-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="text-6xl mb-4">🚀</div>
-          <h2 className="text-4xl font-bold text-white mb-4">Launch Services</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Ninja Services</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Choose your mission package for digital success
+            Choose your Web3 mission package for digital transformation
           </p>
         </div>
         
@@ -41,22 +41,22 @@ export const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-purple-400 transition-all duration-300 hover:scale-105"
+              className="bg-gray-900/80 backdrop-blur-sm p-8 rounded-xl border border-red-500/30 hover:border-red-500 transition-all duration-300 hover:scale-105"
             >
               <div className="text-5xl mb-6 text-center">{service.emoji}</div>
               <h3 className="text-2xl font-bold text-white mb-4 text-center">{service.title}</h3>
               <p className="text-gray-400 mb-6 text-center">{service.description}</p>
-              <div className="text-3xl font-bold text-cyan-400 mb-6 text-center">{service.price}</div>
+              <div className="text-3xl font-bold text-red-500 mb-6 text-center">{service.price}</div>
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="text-gray-300 flex items-center">
-                    <span className="text-green-400 mr-2">✓</span>
+                    <span className="text-red-500 mr-2">✓</span>
                     {feature}
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-full">
-                Start Mission
+              <Button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-full">
+                Deploy Mission
               </Button>
             </div>
           ))}
