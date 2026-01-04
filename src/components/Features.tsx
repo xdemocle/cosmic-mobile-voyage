@@ -46,8 +46,7 @@ export const Features = () => {
               key={index}
               className="bg-gradient-to-br from-gray-800 to-black p-6 rounded-xl border border-red-500/20 hover:border-red-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-red-500/20"
             >
-              <div className="text-4xl mb-4">{feature.emoji}</div>
-              <feature.icon className="h-8 w-8 text-red-500 mb-4" />
+              <feature.icon className="h-8 w-8 text-cyan-400 mb-4" />
               <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
             </div>
